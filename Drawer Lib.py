@@ -6,12 +6,12 @@ from time import sleep
 GPIO.setmode(GPIO.BOARD)
 
 # Plugged into 17 on breadboard
-GPIO.setup(11,GPIO.OUT) #The 2 servos will you one pin per row
-GPIO.setup(13,GPIO.OUT) #pin 27
-GPIO.setup(15, GPIO.OUT) #pin 22
-GPIO.setup(16, GPIO.OUT) #pin 23
-GPIO.setup(18, GPIO.OUT) #pin 24
-GPIO.setup(22, GPIO.OUT) #pin 25
+GPIO.setup(11,GPIO.OUT) #The 2 servos will you one pin per row, servo1, bottom drawer
+GPIO.setup(13,GPIO.OUT) #pin 27, servo2, bottom drawer
+GPIO.setup(15, GPIO.OUT) #pin 22, servo3, middle drawer
+GPIO.setup(16, GPIO.OUT) #pin 23, servo4, middle drawer
+GPIO.setup(18, GPIO.OUT) #pin 24, servo5, top drawer
+GPIO.setup(22, GPIO.OUT) #pin 25, servo6, top drawer
 
 servo1 = GPIO.PWM(11,50) # Note 11 is pin, 50 = 50Hz pulse
 servo2 = GPIO.PWM(13, 50)
